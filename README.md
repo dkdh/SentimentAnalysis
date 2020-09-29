@@ -23,9 +23,9 @@
 </code>
 </pre>
 
-5. 프로젝트 폴더인 SentimentAnalysis의 경로가 gdrive/My Drive/SentimentAnalysis 인지 확인하고, 다른 경로를 사용할 경우 3번째 셀 15번째 줄을 해당 경로로 수정한다.
+5. 프로젝트 폴더인 SentimentAnalysis의 경로가 /gdrive/My Drive/SentimentAnalysis 인지 확인하고, 다른 경로를 사용할 경우 3번째 셀 15번째 줄을 해당 경로로 수정한다.
 <code>
-sys.path.append("gdrive/My Drive/SentimentAnalysis/transformers") #필요시 깃허브에서 다운로드받은 transformers 경로로 수정.
+sys.path.append("/gdrive/My Drive/SentimentAnalysis/transformers") #필요시 깃허브에서 다운로드받은 transformers 경로로 수정.
 </code>
 
 6. 사전 학습된 electra 모델은 https://drive.google.com/drive/folders/1FDUQIzUD9UDnytELTVecMscx_SjW5_vf 에서 얻을 수 있다. train을 진행하기 위해서는 해당 링크의 wordpiece_base 폴더를 다운받아 SentimentAnalysis 폴더에 넣어주고, 마지막 셀의 config 정보의 mode를 train으로 변경해준다. test만 한다면 생략해도 된다.
